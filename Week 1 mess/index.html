@@ -13,11 +13,19 @@
         .red{
             color: red;
         }
+
+        .boldred{
+            font-weight: bold;
+            color: red;
+        }
     </style>
 </head>
 <body>
-    <div class = "bold red">
+    <div class = "boldred" id = "dismal">
+        <p>Red bold text</p>
         <a href="page2.html">Research Page</a>
+        <br>
+        <a href="#SSS">Go to the bottom</a>
     </div>
     <br>
     <a href="https://www.youtube.com/watch?v=x6Lp0vHWC_o&t=3s">Watch this video</a>
@@ -43,5 +51,20 @@
         <li>Developer: Capcom</li>
         <li>Date released: March 8th, 2019</li>
     </ul>
+
+    <footer>
+        <p id = "SSS">
+            Footer
+        </p>
+        <a href="#dismal">Go to the top</a>
+    </footer>
+
+    <script>
+        var message = "Hello World";
+        console.log("Deadweight");
+        console.log(message);
+        var myTag = document.getElementById("SSS");
+        myTag.innerText = "I'm the new footer";
+    </script>
 </body>
 </html>
